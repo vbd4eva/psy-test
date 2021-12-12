@@ -71,7 +71,7 @@ const userData = {
     // tel: "null"
     tel: null
 }
-// const answers = [];
+const answers = [];
 
 // Hight
 // const answers = [2, 3, 1, 1, 2, 3, 1, 2, 0, 2, 3, 1, 0, 2, 3, 2, 1, 3, 2, 3];
@@ -80,13 +80,13 @@ const userData = {
 // Low
 //  const answers = [0, 0, 0, 0, 1, 0, 0, 2, 0, 2, 1, 1, 0, 2, 1, 2, 1, 1, 2, 1];
 //Nothing
- const answers = [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 2, 1];
+//  const answers = [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 2, 1];
 
 
 let currentHandledUserDataFieldName = null;
 
-// let currentQuestion = 0;
-let currentQuestion = 20;
+let currentQuestion = 0;
+// let currentQuestion = 20;
 let currentAnswer = null;
 
 const htmlRefs = {
