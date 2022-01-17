@@ -6,27 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Structura</title>
   <style>
-    
-    button,
-    .js-answer{
-      cursor: pointer;
-    }
-    button:disabled{
-      cursor: no-drop;
-    }
-    .js-answer{
-      list-style-type: circle;
-    }
-    .js-answer.current{
-      list-style-type: disc;
-      font-weight: bold;
-    }
+.js-arena{font-size: 1.2em;}
+.js-question b{
+    padding: 6px;
+}
+
+.js-arena button{
+    margin-top: 10px;
+}
+button,
+.js-answer{
+  cursor: pointer;
+}
+button:disabled{
+  cursor: no-drop !important;
+}
+
+.js-answer{
+  list-style-type: circle;
+  padding: 5px 0;
+}
+.js-answer.current{
+    list-style-type: none;
+    font-weight: bold;
+    color: var(--color-accent);
+    position: relative;
+}
+.js-answer.current:before{
+    content: "\e955";
+    display: block;
+    position: absolute;
+    left: -25px;
+    color: var(--color-accent);
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Ultimate-Icons' !important;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    text-transform: none;
+}
+
   </style>
 </head>
 <body>
   
   <div class="js-arena">
-    <!-- <p class="js-userData"></p> -->
     <form class="js-userDataForm"></form>
     <p class="js-question"></p>
     <div class="js-variants"></div>
